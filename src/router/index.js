@@ -1,16 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const test = resolve => require(['../view/test.vue'], resolve);
-
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: test
+      name: 'login',
+      component: resolve => require(['../view/login.vue'], resolve)
+    },
+    {
+      path:'/home',
+      name:'home',
+      component: resolve => require(['../view/home.vue'],resolve)
     }
   ]
 })

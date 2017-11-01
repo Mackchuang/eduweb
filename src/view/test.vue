@@ -1,9 +1,15 @@
 <template>
     <div>
-        <el-button>Hello</el-button>
-        <span>Hello PAN </span>
+        <div class="header">
+        </div>
+        <div class="left"></div>
+        <div>
+        </div>
+        <div class="footer"></div>
     </div>
 </template>
+<style>
+</style>
 <script>
     export default{
         data:()=>{
